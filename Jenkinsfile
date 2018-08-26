@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'alpine'
+      image 'localhost:5000/myjim'
       args 'ls'
     }
 
