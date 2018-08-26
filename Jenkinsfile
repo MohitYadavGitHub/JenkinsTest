@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'myjekins_v0'
+      image 'alpine'
       args 'ls'
     }
 
