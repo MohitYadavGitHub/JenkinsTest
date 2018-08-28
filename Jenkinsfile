@@ -6,7 +6,7 @@ pipeline {
         git(url: 'https://github.com/MohitYadavGitHub/JenkinsTest', branch: 'master')
       }
     }
-    stage('Test') {
+    stage('python') {
       steps {
         sh 'python test.py test'
       }
