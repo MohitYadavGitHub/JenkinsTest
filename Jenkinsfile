@@ -8,7 +8,7 @@ pipeline {
     }
     stage('python') {
       steps {
-        bat 'dir'
+        bat 'python test.py "hello"'
       }
     }  
   }
