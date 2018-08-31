@@ -13,7 +13,7 @@ pipeline {
     }  
      stage('docker-test') {
       agent {
-        docker {image 'myjen'}
+        docker {image 'ubuntu'}
       }
       steps {
        sh 'ls'
