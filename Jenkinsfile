@@ -11,5 +11,13 @@ pipeline {
        sh '/usr/bin/python test.py "hello"'
       }
     }  
+     stage('docker-test') {
+      agent {
+        docker {image 'myjen'}
+      }
+      steps {
+       sh 'ls'
+      } 
+    }
   }
 }
