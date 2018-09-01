@@ -8,7 +8,7 @@ pipeline {
         }
         stage('dock'){
             agent{
-                docker {image : 'ubuntu'}
+                docker {image 'ubuntu'}
             }
             steps{
                 sh 'ls'
