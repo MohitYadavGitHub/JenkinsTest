@@ -6,5 +6,13 @@ pipeline {
                 sh 'docker ps'
             }
         }
+        stage('dock'){
+            agent{
+                docker {image : 'ubuntu'}
+            }
+            steps{
+                sh 'ls'
+            }
+        }
     }
 }
