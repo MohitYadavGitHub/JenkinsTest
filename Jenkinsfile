@@ -4,7 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'printenv'
-                print $env.BRANCH_NAME
+                sh 'echo $env.BRANCH_NAME'
             }
         }
         stage('dock'){
